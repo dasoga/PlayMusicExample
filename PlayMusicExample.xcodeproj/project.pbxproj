@@ -12,6 +12,12 @@
 		2C8C75E41C9782C3005FE765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75E21C9782C3005FE765 /* Main.storyboard */; };
 		2C8C75E61C9782C3005FE765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75E51C9782C3005FE765 /* Assets.xcassets */; };
 		2C8C75E91C9782C3005FE765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75E71C9782C3005FE765 /* LaunchScreen.storyboard */; };
+		2C8C75F31C98CFAC005FE765 /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C75F21C98CFAC005FE765 /* ShuffleViewController.swift */; };
+		2C8C75F51C98CFC5005FE765 /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C75F41C98CFC5005FE765 /* SongDetailViewController.swift */; };
+		2C8C75F71C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75F61C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 */; };
+		2C8C75FA1C98D3D9005FE765 /* junior85_-_07_-_Function.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75F91C98D3D9005FE765 /* junior85_-_07_-_Function.mp3 */; };
+		2C8C75FC1C98D3E0005FE765 /* Black_Ant_-_08_-_realest_year_9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75FB1C98D3E0005FE765 /* Black_Ant_-_08_-_realest_year_9.mp3 */; };
+		2C8C75FE1C98D3E8005FE765 /* Dave_Girtsman_-_11_-_Goofy_Vocal_Groove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75FD1C98D3E8005FE765 /* Dave_Girtsman_-_11_-_Goofy_Vocal_Groove.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		2C8C75E51C9782C3005FE765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8C75E81C9782C3005FE765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8C75EA1C9782C3005FE765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C8C75F21C98CFAC005FE765 /* ShuffleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
+		2C8C75F41C98CFC5005FE765 /* SongDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
+		2C8C75F61C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "John Wesley Coleman - Tequila 10 Seconds.mp3"; sourceTree = "<group>"; };
+		2C8C75F91C98D3D9005FE765 /* junior85_-_07_-_Function.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "junior85_-_07_-_Function.mp3"; sourceTree = "<group>"; };
+		2C8C75FB1C98D3E0005FE765 /* Black_Ant_-_08_-_realest_year_9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black_Ant_-_08_-_realest_year_9.mp3"; sourceTree = "<group>"; };
+		2C8C75FD1C98D3E8005FE765 /* Dave_Girtsman_-_11_-_Goofy_Vocal_Groove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dave_Girtsman_-_11_-_Goofy_Vocal_Groove.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,22 @@
 				2C8C75E51C9782C3005FE765 /* Assets.xcassets */,
 				2C8C75E71C9782C3005FE765 /* LaunchScreen.storyboard */,
 				2C8C75EA1C9782C3005FE765 /* Info.plist */,
+				2C8C75F21C98CFAC005FE765 /* ShuffleViewController.swift */,
+				2C8C75F41C98CFC5005FE765 /* SongDetailViewController.swift */,
+				2C8C75F81C98D3C2005FE765 /* Songs */,
 			);
 			path = PlayMusicExample;
+			sourceTree = "<group>";
+		};
+		2C8C75F81C98D3C2005FE765 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				2C8C75F61C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 */,
+				2C8C75F91C98D3D9005FE765 /* junior85_-_07_-_Function.mp3 */,
+				2C8C75FB1C98D3E0005FE765 /* Black_Ant_-_08_-_realest_year_9.mp3 */,
+				2C8C75FD1C98D3E8005FE765 /* Dave_Girtsman_-_11_-_Goofy_Vocal_Groove.mp3 */,
+			);
+			name = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8C75F71C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 in Resources */,
+				2C8C75FA1C98D3D9005FE765 /* junior85_-_07_-_Function.mp3 in Resources */,
+				2C8C75FE1C98D3E8005FE765 /* Dave_Girtsman_-_11_-_Goofy_Vocal_Groove.mp3 in Resources */,
+				2C8C75FC1C98D3E0005FE765 /* Black_Ant_-_08_-_realest_year_9.mp3 in Resources */,
 				2C8C75E91C9782C3005FE765 /* LaunchScreen.storyboard in Resources */,
 				2C8C75E61C9782C3005FE765 /* Assets.xcassets in Resources */,
 				2C8C75E41C9782C3005FE765 /* Main.storyboard in Resources */,
@@ -137,6 +167,8 @@
 			files = (
 				2C8C75E11C9782C3005FE765 /* ViewController.swift in Sources */,
 				2C8C75DF1C9782C3005FE765 /* AppDelegate.swift in Sources */,
+				2C8C75F51C98CFC5005FE765 /* SongDetailViewController.swift in Sources */,
+				2C8C75F31C98CFAC005FE765 /* ShuffleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +318,7 @@
 				2C8C75EF1C9782C3005FE765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
