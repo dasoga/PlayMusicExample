@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ShuffleViewController: UIViewController {
+    
+    @IBOutlet var closeButton: UIButton!
+    
+    private var reproducer: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let soundURL = NSBundle.mainBundle().URLForResource("John Wesley Coleman - Tequila 10 Seconds", withExtension: "mp3")
+        do{
+            try reproducer = AVAudioPlayer(contentsOfURL: soundURL!)
+        }catch{
+            print("Sound load fails")
+        }
+        
+        if !reproducer.playing{
+            reproducer.play()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func closeAction(sender:AnyObject){
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 
