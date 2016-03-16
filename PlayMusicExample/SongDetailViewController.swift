@@ -9,11 +9,13 @@
 import UIKit
 
 class SongDetailViewController: UIViewController {
+    
+    var song: Song!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print("Song \(song.title)")
     }
 
     override func didReceiveMemoryWarning() {
