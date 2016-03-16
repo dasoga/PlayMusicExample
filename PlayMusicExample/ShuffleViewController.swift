@@ -11,7 +11,7 @@ import AVFoundation
 
 class ShuffleViewController: UIViewController {
     
-    @IBOutlet var closeButton: UIButton!
+    @IBOutlet var playButton: UIButton!
     
     private var reproducer: AVAudioPlayer!
 
@@ -27,6 +27,11 @@ class ShuffleViewController: UIViewController {
         
         if !reproducer.playing{
             reproducer.play()
+            playButton.setTitle("Playing...", forState: UIControlState.Normal)
+            playButton.enabled = false
+        }else{
+            playButton.setTitle("Play", forState: UIControlState.Normal)
+            playButton.enabled = true
         }
     }
 
@@ -35,9 +40,44 @@ class ShuffleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: General Functions
+    
+    
+    
+    
+    // MARK: Actions
+    
     @IBAction func closeAction(sender:AnyObject){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func playFunction(sender:AnyObject){
+        if !reproducer.playing{
+            reproducer.play()
+            playButton.enabled = false
+            playButton.setTitle("Playing...", forState: UIControlState.Normal)
+        }
+    }
+
+    
+    @IBAction func stopFunction(sender:AnyObject){
+        if reproducer.playing{
+            reproducer.stop()
+            reproducer.currentTime = 0.0
+            playButton.enabled = true
+            playButton.setTitle("Play", forState: UIControlState.Normal)
+        }
+    }
+    
+    @IBAction func pauseFunction(sender:AnyObject){
+        if reproducer.playing{
+            reproducer.pause()
+            playButton.enabled = true
+            playButton.setTitle("Play", forState: UIControlState.Normal)
+        }
+    }
+
+    
     
 
     /*

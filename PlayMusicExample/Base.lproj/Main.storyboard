@@ -30,14 +30,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyO-og-flL">
                                         <rect key="frame" x="285" y="352" width="30" height="30"/>
                                         <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="playFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="Pgp-gJ-Zgj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-Am-1Z1">
                                         <rect key="frame" x="279" y="390" width="42" height="30"/>
                                         <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="krn-8L-axL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHi-KK-BWz">
                                         <rect key="frame" x="284" y="423" width="32" height="30"/>
                                         <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="Eaf-ze-WTC"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oN-xb-Hjt">
                                         <rect key="frame" x="269" y="494" width="62" height="21"/>
@@ -89,6 +98,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playButton" destination="OyO-og-flL" id="zNN-Cu-S9T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeA-Bz-nue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
