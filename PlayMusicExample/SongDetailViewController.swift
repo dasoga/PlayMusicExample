@@ -45,7 +45,9 @@ class SongDetailViewController: UIViewController, AVAudioPlayerDelegate {
         //let vol = AVAudioSession.sharedInstance().outputVolume
         sliderVolume.value = 0.5
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+        
+        //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
         
         coverImageView.image = UIImage(named: song.cover)
     }
@@ -77,7 +79,9 @@ class SongDetailViewController: UIViewController, AVAudioPlayerDelegate {
             reproducer.play()
             playButton.enabled = false
             playButton.setTitle("Playing...", forState: UIControlState.Normal)
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+            // Swift 2.1
+            //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime"), userInfo: nil, repeats: true)
 
         }
     }

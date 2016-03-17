@@ -43,7 +43,8 @@ class ShuffleViewController: UIViewController, AVAudioPlayerDelegate {
             playButton.enabled = true
         }
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+        //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
         
         coverImageView.image = UIImage(named: song.cover)
 
@@ -83,7 +84,8 @@ class ShuffleViewController: UIViewController, AVAudioPlayerDelegate {
             reproducer.play()
             playButton.enabled = false
             playButton.setTitle("Playing...", forState: UIControlState.Normal)
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+            //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
             
         }
     }
