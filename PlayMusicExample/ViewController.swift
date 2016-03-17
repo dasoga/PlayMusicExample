@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableViewSongs.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel?.text = songsArray[indexPath.row].title
+        cell.textLabel?.text = "\(indexPath.row + 1).- \"\(songsArray[indexPath.row].title)\" "
         return cell
     }
     
