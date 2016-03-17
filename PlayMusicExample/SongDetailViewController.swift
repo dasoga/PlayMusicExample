@@ -7,15 +7,36 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SongDetailViewController: UIViewController {
     
+    @IBOutlet var playButton: UIButton!
+    
+    private var reproducer: AVAudioPlayer!
     var song: Song!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("Song \(song.title)")
+        
+        let soundURL = NSBundle.mainBundle().URLForResource(song.title, withExtension: "mp3")
+        do{
+            try reproducer = AVAudioPlayer(contentsOfURL: soundURL!)
+        }catch{
+            print("Sound load fails")
+        }
+        
+        if !reproducer.playing{
+            reproducer.play()
+            playButton.setTitle("Playing...", forState: UIControlState.Normal)
+            playButton.enabled = false
+        }else{
+            playButton.setTitle("Play", forState: UIControlState.Normal)
+            playButton.enabled = true
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

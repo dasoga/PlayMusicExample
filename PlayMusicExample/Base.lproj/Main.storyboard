@@ -238,6 +238,9 @@
                             <constraint firstItem="2xz-1b-fZA" firstAttribute="top" secondItem="yJn-jh-Z0Z" secondAttribute="top" id="tTV-AP-TI7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="V6o-y1-kA0" id="pSj-xm-JoB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lr-jP-Muw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
