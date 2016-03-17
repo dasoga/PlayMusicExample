@@ -14,6 +14,7 @@ class SongDetailViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet var playButton: UIButton!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var sliderVolume: UISlider!
+    @IBOutlet var coverImageView: UIImageView!
     
     private var reproducer: AVAudioPlayer!
     var song: Song!
@@ -45,6 +46,13 @@ class SongDetailViewController: UIViewController, AVAudioPlayerDelegate {
         sliderVolume.value = 0.5
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(SongDetailViewController.updateTime), userInfo: nil, repeats: true)
+        
+        coverImageView.image = UIImage(named: song.cover)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        reproducer.stop()
+        reproducer.currentTime = 0.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,14 +103,12 @@ class SongDetailViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func sliderValueChanged(sender: UISlider) {
         let currentValue = Float(sender.value)
-        print("current \(currentValue)")
         reproducer.volume = currentValue
     }
     
     // MARK Audio delegates
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
-        print("finish playing")
         playButton.setTitle("Play", forState: UIControlState.Normal)
         playButton.enabled = true
     }

@@ -31,21 +31,21 @@
                                         <rect key="frame" x="285" y="352" width="30" height="30"/>
                                         <state key="normal" title="Play"/>
                                         <connections>
-                                            <action selector="playFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="Pgp-gJ-Zgj"/>
+                                            <action selector="playFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="QM6-5q-aLI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-Am-1Z1">
                                         <rect key="frame" x="279" y="390" width="42" height="30"/>
                                         <state key="normal" title="Pause"/>
                                         <connections>
-                                            <action selector="pauseFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="krn-8L-axL"/>
+                                            <action selector="pauseFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="FkX-yN-LnV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHi-KK-BWz">
                                         <rect key="frame" x="284" y="423" width="32" height="30"/>
                                         <state key="normal" title="Stop"/>
                                         <connections>
-                                            <action selector="stopFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="Eaf-ze-WTC"/>
+                                            <action selector="stopFunction:" destination="EKf-dQ-7Zm" eventType="touchUpInside" id="Vqv-y9-hPV"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oN-xb-Hjt">
@@ -56,7 +56,16 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9x1-IO-y2Q">
                                         <rect key="frame" x="18" y="529" width="564" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="EKf-dQ-7Zm" eventType="valueChanged" id="OwI-sh-7aQ"/>
+                                        </connections>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLp-Ra-wDU">
+                                        <rect key="frame" x="283" y="461" width="34" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="OyO-og-flL" firstAttribute="top" secondItem="nmJ-M8-GpH" secondAttribute="bottom" constant="13" id="1EU-t9-GTY"/>
@@ -68,6 +77,7 @@
                                     <constraint firstAttribute="bottom" secondItem="9x1-IO-y2Q" secondAttribute="bottom" constant="41" id="NQF-eB-GvL"/>
                                     <constraint firstItem="fHi-KK-BWz" firstAttribute="centerX" secondItem="1oN-xb-Hjt" secondAttribute="centerX" id="UyS-Oh-b5v"/>
                                     <constraint firstItem="nmJ-M8-GpH" firstAttribute="centerX" secondItem="vVd-fg-qIe" secondAttribute="centerX" id="V5g-Cb-A0K"/>
+                                    <constraint firstItem="wLp-Ra-wDU" firstAttribute="top" secondItem="fHi-KK-BWz" secondAttribute="bottom" constant="8" id="Vsu-YP-16J"/>
                                     <constraint firstItem="9x1-IO-y2Q" firstAttribute="leading" secondItem="vVd-fg-qIe" secondAttribute="leading" constant="20" id="XyC-gh-BPF"/>
                                     <constraint firstAttribute="trailing" secondItem="9x1-IO-y2Q" secondAttribute="trailing" constant="20" id="a2d-W6-cfx"/>
                                     <constraint firstItem="OyO-og-flL" firstAttribute="centerX" secondItem="SPf-Am-1Z1" secondAttribute="centerX" id="aiF-a6-jIK"/>
@@ -75,6 +85,7 @@
                                     <constraint firstItem="SPf-Am-1Z1" firstAttribute="centerX" secondItem="fHi-KK-BWz" secondAttribute="centerX" id="fGN-Fe-xHJ"/>
                                     <constraint firstItem="OyO-og-flL" firstAttribute="centerX" secondItem="vVd-fg-qIe" secondAttribute="centerX" id="jyZ-Dg-Irq"/>
                                     <constraint firstItem="1oN-xb-Hjt" firstAttribute="top" secondItem="fHi-KK-BWz" secondAttribute="bottom" constant="41" id="t3M-dV-IIa"/>
+                                    <constraint firstItem="wLp-Ra-wDU" firstAttribute="centerX" secondItem="fHi-KK-BWz" secondAttribute="centerX" id="vpS-NL-Yn8"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -99,7 +110,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="coverImageView" destination="nmJ-M8-GpH" id="WA7-Tm-pCm"/>
+                        <outlet property="durationLabel" destination="wLp-Ra-wDU" id="wzH-g3-fP2"/>
                         <outlet property="playButton" destination="OyO-og-flL" id="zNN-Cu-S9T"/>
+                        <outlet property="sliderVolume" destination="9x1-IO-y2Q" id="qLi-R4-l6O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeA-Bz-nue" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,13 +168,14 @@
                     <navigationItem key="navigationItem" title="Songs" id="uBq-VJ-FUn">
                         <barButtonItem key="rightBarButtonItem" title="Shuffle" id="4ka-qv-F9P">
                             <connections>
-                                <segue destination="Pns-FV-KXM" kind="presentation" id="LUK-Ff-w2c"/>
+                                <action selector="goToShuffleView:" destination="BYZ-38-t0r" id="uFe-IU-lW6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableViewSongs" destination="63R-P9-Vas" id="54U-mB-4SD"/>
                         <segue destination="djc-Ly-QQN" kind="show" identifier="songDetail" id="SJg-nu-Lt0"/>
+                        <segue destination="Pns-FV-KXM" kind="presentation" identifier="shuffleSegue" id="E9H-vt-VsX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -259,6 +274,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="coverImageView" destination="nnZ-uG-yuL" id="l2w-5e-PZh"/>
                         <outlet property="durationLabel" destination="3WQ-b9-prJ" id="uKN-JW-aeN"/>
                         <outlet property="playButton" destination="V6o-y1-kA0" id="pSj-xm-JoB"/>
                         <outlet property="sliderVolume" destination="Gbb-eF-GiS" id="d7a-XR-ZqK"/>

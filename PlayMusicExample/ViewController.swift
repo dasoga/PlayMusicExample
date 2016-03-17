@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         fillArray()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +39,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                       Song(title: "junior85 - Function", cover: "cover2"),
                       Song(title: "Black Ant - realest year", cover: "cover3"),
                       Song(title: "Dave Girtsman - Goofy Vocal Groove", cover: "cover4")  ]
+    }
+    
+    // MARK: Actions
+    @IBAction func goToShuffleView(sender:AnyObject){
+        performSegueWithIdentifier("shuffleSegue", sender: self)
     }
     
     // MARK: Table View Delegate
@@ -66,6 +72,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "songDetail"{
             let destinationVC = segue.destinationViewController as! SongDetailViewController
             destinationVC.song = songToSend
+        }
+        if segue.identifier == "shuffleSegue"{
+            let randomNumber = Int(arc4random_uniform(UInt32(songsArray.count)))
+            let nav = segue.destinationViewController as! UINavigationController
+            let destinationVC = nav.topViewController as! ShuffleViewController
+            destinationVC.song = songsArray[randomNumber]
         }
 
     }
