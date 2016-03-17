@@ -18,6 +18,7 @@
 		2C8C75FA1C98D3D9005FE765 /* junior85 - Function.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75F91C98D3D9005FE765 /* junior85 - Function.mp3 */; };
 		2C8C75FC1C98D3E0005FE765 /* Black Ant - realest year.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75FB1C98D3E0005FE765 /* Black Ant - realest year.mp3 */; };
 		2C8C75FE1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75FD1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 */; };
+		2CCF27C51C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27C41C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2C8C75F91C98D3D9005FE765 /* junior85 - Function.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "junior85 - Function.mp3"; sourceTree = "<group>"; };
 		2C8C75FB1C98D3E0005FE765 /* Black Ant - realest year.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black Ant - realest year.mp3"; sourceTree = "<group>"; };
 		2C8C75FD1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dave Girtsman - Goofy Vocal Groove.mp3"; sourceTree = "<group>"; };
+		2CCF27C41C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Norrin Radd - Quantum Uncertainty.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				2C8C75F91C98D3D9005FE765 /* junior85 - Function.mp3 */,
 				2C8C75FB1C98D3E0005FE765 /* Black Ant - realest year.mp3 */,
 				2C8C75FD1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 */,
+				2CCF27C41C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */,
 			);
 			name = Songs;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8C75F71C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 in Resources */,
+				2CCF27C51C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 in Resources */,
 				2C8C75FA1C98D3D9005FE765 /* junior85 - Function.mp3 in Resources */,
 				2C8C75FE1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 in Resources */,
 				2C8C75FC1C98D3E0005FE765 /* Black Ant - realest year.mp3 in Resources */,

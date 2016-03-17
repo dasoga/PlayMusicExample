@@ -38,7 +38,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         songsArray = [Song(title: "John Wesley Coleman - Tequila 10 Seconds", cover: "cover1"),
                       Song(title: "junior85 - Function", cover: "cover2"),
                       Song(title: "Black Ant - realest year", cover: "cover3"),
-                      Song(title: "Dave Girtsman - Goofy Vocal Groove", cover: "cover4")  ]
+                      Song(title: "Dave Girtsman - Goofy Vocal Groove", cover: "cover4"),
+                      Song(title: "Norrin Radd - Quantum Uncertainty", cover: "cover5") ]
     }
     
     // MARK: Actions
