@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //MARK: Fill array
     func fillArray(){
-        songsArray = [Song(title: "John Wesley Coleman - Tequila 10 Seconds", cover: "cover1"),
+        songsArray = [Song(title: "John Wesley Coleman - Tequila", cover: "cover1"),
                       Song(title: "junior85 - Function", cover: "cover2"),
                       Song(title: "Black Ant - realest year", cover: "cover3"),
                       Song(title: "Dave Girtsman - Goofy Vocal Groove", cover: "cover4"),

@@ -14,11 +14,11 @@
 		2C8C75E91C9782C3005FE765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75E71C9782C3005FE765 /* LaunchScreen.storyboard */; };
 		2C8C75F31C98CFAC005FE765 /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C75F21C98CFAC005FE765 /* ShuffleViewController.swift */; };
 		2C8C75F51C98CFC5005FE765 /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C75F41C98CFC5005FE765 /* SongDetailViewController.swift */; };
-		2C8C75F71C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75F61C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 */; };
-		2C8C75FA1C98D3D9005FE765 /* junior85 - Function.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75F91C98D3D9005FE765 /* junior85 - Function.mp3 */; };
-		2C8C75FC1C98D3E0005FE765 /* Black Ant - realest year.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75FB1C98D3E0005FE765 /* Black Ant - realest year.mp3 */; };
-		2C8C75FE1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C75FD1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 */; };
-		2CCF27C51C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27C41C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */; };
+		2CCF27C81C9B09B600E3B667 /* John Wesley Coleman - Tequila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27C71C9B09B600E3B667 /* John Wesley Coleman - Tequila.mp3 */; };
+		2CCF27CA1C9B0A6200E3B667 /* Black Ant - realest year.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27C91C9B0A6200E3B667 /* Black Ant - realest year.mp3 */; };
+		2CCF27CC1C9B0AC500E3B667 /* junior85 - Function.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27CB1C9B0AC500E3B667 /* junior85 - Function.mp3 */; };
+		2CCF27CE1C9B0B0400E3B667 /* Dave Girtsman - Goofy Vocal Groove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27CD1C9B0B0400E3B667 /* Dave Girtsman - Goofy Vocal Groove.mp3 */; };
+		2CCF27D01C9B0B6800E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF27CF1C9B0B6800E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		2C8C75EA1C9782C3005FE765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8C75F21C98CFAC005FE765 /* ShuffleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
 		2C8C75F41C98CFC5005FE765 /* SongDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
-		2C8C75F61C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "John Wesley Coleman - Tequila 10 Seconds.mp3"; sourceTree = "<group>"; };
-		2C8C75F91C98D3D9005FE765 /* junior85 - Function.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "junior85 - Function.mp3"; sourceTree = "<group>"; };
-		2C8C75FB1C98D3E0005FE765 /* Black Ant - realest year.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black Ant - realest year.mp3"; sourceTree = "<group>"; };
-		2C8C75FD1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dave Girtsman - Goofy Vocal Groove.mp3"; sourceTree = "<group>"; };
-		2CCF27C41C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Norrin Radd - Quantum Uncertainty.mp3"; sourceTree = "<group>"; };
+		2CCF27C71C9B09B600E3B667 /* John Wesley Coleman - Tequila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "John Wesley Coleman - Tequila.mp3"; sourceTree = "<group>"; };
+		2CCF27C91C9B0A6200E3B667 /* Black Ant - realest year.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Black Ant - realest year.mp3"; sourceTree = "<group>"; };
+		2CCF27CB1C9B0AC500E3B667 /* junior85 - Function.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "junior85 - Function.mp3"; sourceTree = "<group>"; };
+		2CCF27CD1C9B0B0400E3B667 /* Dave Girtsman - Goofy Vocal Groove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dave Girtsman - Goofy Vocal Groove.mp3"; sourceTree = "<group>"; };
+		2CCF27CF1C9B0B6800E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Norrin Radd - Quantum Uncertainty.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +84,11 @@
 		2C8C75F81C98D3C2005FE765 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				2C8C75F61C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 */,
-				2C8C75F91C98D3D9005FE765 /* junior85 - Function.mp3 */,
-				2C8C75FB1C98D3E0005FE765 /* Black Ant - realest year.mp3 */,
-				2C8C75FD1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 */,
-				2CCF27C41C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */,
+				2CCF27C71C9B09B600E3B667 /* John Wesley Coleman - Tequila.mp3 */,
+				2CCF27CD1C9B0B0400E3B667 /* Dave Girtsman - Goofy Vocal Groove.mp3 */,
+				2CCF27C91C9B0A6200E3B667 /* Black Ant - realest year.mp3 */,
+				2CCF27CB1C9B0AC500E3B667 /* junior85 - Function.mp3 */,
+				2CCF27CF1C9B0B6800E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 */,
 			);
 			name = Songs;
 			sourceTree = "<group>";
@@ -151,11 +151,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8C75F71C98D3BE005FE765 /* John Wesley Coleman - Tequila 10 Seconds.mp3 in Resources */,
-				2CCF27C51C9B05FA00E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 in Resources */,
-				2C8C75FA1C98D3D9005FE765 /* junior85 - Function.mp3 in Resources */,
-				2C8C75FE1C98D3E8005FE765 /* Dave Girtsman - Goofy Vocal Groove.mp3 in Resources */,
-				2C8C75FC1C98D3E0005FE765 /* Black Ant - realest year.mp3 in Resources */,
+				2CCF27CA1C9B0A6200E3B667 /* Black Ant - realest year.mp3 in Resources */,
+				2CCF27CE1C9B0B0400E3B667 /* Dave Girtsman - Goofy Vocal Groove.mp3 in Resources */,
+				2CCF27C81C9B09B600E3B667 /* John Wesley Coleman - Tequila.mp3 in Resources */,
+				2CCF27CC1C9B0AC500E3B667 /* junior85 - Function.mp3 in Resources */,
+				2CCF27D01C9B0B6800E3B667 /* Norrin Radd - Quantum Uncertainty.mp3 in Resources */,
 				2C8C75E91C9782C3005FE765 /* LaunchScreen.storyboard in Resources */,
 				2C8C75E61C9782C3005FE765 /* Assets.xcassets in Resources */,
 				2C8C75E41C9782C3005FE765 /* Main.storyboard in Resources */,
