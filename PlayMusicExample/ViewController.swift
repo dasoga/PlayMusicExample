@@ -57,8 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        songToSend = songsArray[indexPath.row]
-        print("send \(songToSend)")
+        songToSend = songsArray[indexPath.row]        
         performSegueWithIdentifier("songDetail", sender: self)
     }
     

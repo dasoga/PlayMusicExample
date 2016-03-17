@@ -192,14 +192,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6o-y1-kA0">
                                         <rect key="frame" x="285" y="353" width="30" height="30"/>
                                         <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="playFunction:" destination="djc-Ly-QQN" eventType="touchUpInside" id="dOE-GK-Pze"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkm-Zn-8TM">
                                         <rect key="frame" x="279" y="391" width="42" height="30"/>
                                         <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseFunction:" destination="djc-Ly-QQN" eventType="touchUpInside" id="7Cy-JL-cy5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0Y-1U-sVG">
                                         <rect key="frame" x="284" y="424" width="32" height="30"/>
                                         <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopFunction:" destination="djc-Ly-QQN" eventType="touchUpInside" id="JcD-lL-619"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt4-CG-jgp">
                                         <rect key="frame" x="269" y="495" width="62" height="21"/>
@@ -209,7 +218,16 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-eF-GiS">
                                         <rect key="frame" x="18" y="530" width="564" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="djc-Ly-QQN" eventType="valueChanged" id="2Xv-9Y-xOp"/>
+                                        </connections>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WQ-b9-prJ">
+                                        <rect key="frame" x="283" y="462" width="34" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Jt4-CG-jgp" firstAttribute="top" secondItem="d0Y-1U-sVG" secondAttribute="bottom" constant="41" id="2ti-NI-ZHl"/>
@@ -218,6 +236,7 @@
                                     <constraint firstItem="d0Y-1U-sVG" firstAttribute="centerX" secondItem="Jt4-CG-jgp" secondAttribute="centerX" id="Kqo-1i-Xhi"/>
                                     <constraint firstItem="nnZ-uG-yuL" firstAttribute="top" secondItem="2xz-1b-fZA" secondAttribute="top" constant="128" id="RdL-4X-6SV"/>
                                     <constraint firstItem="nnZ-uG-yuL" firstAttribute="centerX" secondItem="2xz-1b-fZA" secondAttribute="centerX" id="TnS-te-cPK"/>
+                                    <constraint firstItem="3WQ-b9-prJ" firstAttribute="centerX" secondItem="d0Y-1U-sVG" secondAttribute="centerX" id="U3Z-qx-Hra"/>
                                     <constraint firstItem="Gbb-eF-GiS" firstAttribute="top" secondItem="Jt4-CG-jgp" secondAttribute="bottom" constant="14" id="VU4-K4-AFg"/>
                                     <constraint firstAttribute="trailing" secondItem="Gbb-eF-GiS" secondAttribute="trailing" constant="20" id="bDz-ik-O1C"/>
                                     <constraint firstItem="V6o-y1-kA0" firstAttribute="top" secondItem="nnZ-uG-yuL" secondAttribute="bottom" constant="13" id="ckg-sv-OfS"/>
@@ -226,6 +245,7 @@
                                     <constraint firstItem="Gbb-eF-GiS" firstAttribute="leading" secondItem="2xz-1b-fZA" secondAttribute="leading" constant="20" id="lW3-gw-8ia"/>
                                     <constraint firstItem="V6o-y1-kA0" firstAttribute="centerX" secondItem="Zkm-Zn-8TM" secondAttribute="centerX" id="opf-Gh-ccK"/>
                                     <constraint firstItem="Zkm-Zn-8TM" firstAttribute="centerX" secondItem="d0Y-1U-sVG" secondAttribute="centerX" id="qG4-cN-HFi"/>
+                                    <constraint firstItem="3WQ-b9-prJ" firstAttribute="top" secondItem="d0Y-1U-sVG" secondAttribute="bottom" constant="8" id="rYT-vb-OAz"/>
                                     <constraint firstItem="Jt4-CG-jgp" firstAttribute="centerX" secondItem="Gbb-eF-GiS" secondAttribute="centerX" id="xaW-5c-yfx"/>
                                 </constraints>
                             </scrollView>
@@ -239,7 +259,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="durationLabel" destination="3WQ-b9-prJ" id="uKN-JW-aeN"/>
                         <outlet property="playButton" destination="V6o-y1-kA0" id="pSj-xm-JoB"/>
+                        <outlet property="sliderVolume" destination="Gbb-eF-GiS" id="d7a-XR-ZqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lr-jP-Muw" userLabel="First Responder" sceneMemberID="firstResponder"/>
